@@ -10,6 +10,8 @@ const Movie = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const modalHandle = async () => {
+    setAllChars([]);
+
     setModalState(!modalState);
     await fetchAllChars();
   };

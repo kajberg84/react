@@ -9,7 +9,6 @@ const Home = () => {
   const [sortedMovies, setSortedMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Sorting by release date
   useEffect(() => {
     const sorted = movies.sort((a, b) => {
       let date1 = new Date(a.release_date).getTime();
@@ -35,14 +34,9 @@ const Home = () => {
     }
   };
 
-  let mainClass = "beforeFetch";
-  if (!isPressed) {
-    mainClass = "afterFetch";
-  }
-
   const renderMain = () => {
     if (isLoading) {
-      return <h1>Loading...</h1>;
+      return <h2 className='loading'>Loading...</h2>;
     } else {
       return (
         <>
@@ -62,30 +56,13 @@ const Home = () => {
   };
 
   return (
-    <main className={mainClass}>
+    <main className={`${isPressed ? "beforeFetch" : ""}`}>
       {isPressed && (
         <button className='button-wrapper' onClick={() => closeFetchButton()}>
           Fetch All Movies
         </button>
       )}
-
       {renderMain()}
-
-      {/* {isPressed ? (
-      ) : (
-        sortedMovies.map((movie) => {
-          return (
-            <Movie
-              key={movie.episode_id}
-              title={movie.title}
-              episode={movie.episode_id}
-              director={movie.director}
-              release={movie.release_date}
-              characters={movie.characters}
-            />
-          );
-        })
-      )} */}
     </main>
   );
 };

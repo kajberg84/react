@@ -14,11 +14,18 @@ main {
   box-shadow: rgba(0, 0, 0, 1) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.beforeFetch {
+.beforeFetch{
   justify-content: center;
   align-items: center;
 }
 
-.afterFetch {
-margin: 50px;
+/* .afterFetch {
+margin-top: 50px;
+}  */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
