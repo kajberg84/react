@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export async function getAxios(URL) {
-  const sendURL = `https://swapi.dev/api/${URL}`;
+  const sendURL = URL;
   try {
     const response = await axios({
       url: sendURL,
