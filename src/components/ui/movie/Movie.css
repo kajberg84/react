@@ -1,0 +1,29 @@
+.movie-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin-right: 10px;
+}
+
+.movie-header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.movie-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 80%;
+}
