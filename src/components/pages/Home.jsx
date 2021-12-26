@@ -24,6 +24,7 @@ const Home = () => {
   const getMovies = async () => {
     try {
       const response = await getAxios("/films");
+      console.log(response.results);
       setMovies(response.results);
     } catch (error) {
       console.log("home error", error);
@@ -51,6 +52,7 @@ const Home = () => {
               episode={movie.episode_id}
               director={movie.director}
               release={movie.release_date}
+              characters={movie.characters}
             />
           );
         })
