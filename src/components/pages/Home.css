@@ -19,10 +19,6 @@ main {
   align-items: center;
 }
 
-/* .afterFetch {
-margin-top: 50px;
-}  */
-
 .loading {
   display: flex;
   justify-content: center;

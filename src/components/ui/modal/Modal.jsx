@@ -4,7 +4,7 @@ import "./Modal.css";
 /**
  * Renders the modal Component
  *
- * @param {*} props - children
+ * @param {*} props - children, closeModal
  * @return {*}
  */
 const Modal = (props) => {

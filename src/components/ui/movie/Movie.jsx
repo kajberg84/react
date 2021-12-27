@@ -2,7 +2,12 @@ import "./Movie.css";
 import { useState } from "react";
 import Modal from "../modal/Modal";
 import { getAxios } from "../../api/axiosCalls";
-
+/**
+ * Renders the Movie Component
+ *
+ * @param {*} props - title, episode, director, release, characters
+ * @return {*} 
+ */
 const Movie = (props) => {
   const { title, episode, director, release, characters } = props;
   const [modalState, setModalState] = useState(false);
@@ -53,7 +58,7 @@ const Movie = (props) => {
         <li className='mt10'>ReleaseDate: {release}</li>
       </ul>
       <button onClick={() => modalHandle()} className='movie-button'>
-        Show more
+        Show characters
       </button>
 
       {modalState && (
