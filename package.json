@@ -1,6 +1,7 @@
 {
-  "name": "ass2",
-  "version": "0.1.0",
+  "name": "assignment2-swapi_api",
+  "description": "A simple API to retrieve data from the Star Wars API",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -17,6 +18,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "author": {
+    "name": "Kaj Berg",
+    "email": "kajberg84@gmail.com"
   },
   "eslintConfig": {
     "extends": [
